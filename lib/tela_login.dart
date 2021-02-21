@@ -13,26 +13,29 @@ class _tela_loginState extends State<tela_login> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.amber,
-      body: Column(
-        children: <Widget>[
-          //alinhamento da imagem acima
-          Align(
-            alignment: Alignment.topCenter,
-            child: Image.asset(
-              "assets/log.png",
-              width: 230,
-              height: 230,
+      body: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 12),
+        child: Column(
+          children: <Widget>[
+            //alinhamento da logo acima
+            Align(
+              alignment: Alignment.topCenter,
+              child: Image.asset(
+                "assets/log.png",
+                width: 230,
+                height: 230,
+              ),
             ),
-          ),
-
-          Card(
-            color: Colors.white,
-            child: TextField(
-              decoration:
-                  InputDecoration(border: InputBorder.none, hintText: 'E-mail'),
+            ////////////////////////////////////////////////////////////
+            Container(
+              color: Colors.white,
+              child: TextField(
+                decoration: InputDecoration(
+                    border: InputBorder.none, hintText: 'E-mail'),
+              ),
             ),
-          )
-        ],
+          ],
+        ),
       ),
     );
   }
