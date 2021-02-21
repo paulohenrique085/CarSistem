@@ -15,51 +15,53 @@ class _tela_loginState extends State<tela_login> {
       backgroundColor: Colors.amber,
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 20),
-        child: Column(
-          children: <Widget>[
-            //alinhamento da logo acima
-            Align(
-              alignment: Alignment.topCenter,
-              child: Image.asset(
-                "assets/log.png",
-                width: 230,
-                height: 230,
+        child: SingleChildScrollView(
+          child: Column(
+            children: <Widget>[
+              //alinhamento da logo acima
+              Align(
+                alignment: Alignment.topCenter,
+                child: Image.asset(
+                  "assets/log.png",
+                  width: 230,
+                  height: 230,
+                ),
               ),
-            ),
-            /////////////////////////////////////////////////////////////
+              /////////////////////////////////////////////////////////////
 
-            Container(
-              decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.all(Radius.circular(10))),
-              child: TextField(
-                decoration: InputDecoration(
-                    fillColor: Colors.white,
-                    border: OutlineInputBorder(
-                      borderRadius: const BorderRadius.all(
-                        const Radius.circular(10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(10))),
+                child: TextField(
+                  decoration: InputDecoration(
+                      fillColor: Colors.white,
+                      border: OutlineInputBorder(
+                        borderRadius: const BorderRadius.all(
+                          const Radius.circular(10),
+                        ),
                       ),
-                    ),
-                    hintText: 'E-mail'),
+                      hintText: 'E-mail'),
+                ),
               ),
-            ),
 
-            Container(
-              decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.all(Radius.circular(10))),
-              child: TextField(
-                decoration: InputDecoration(
-                    fillColor: Colors.white,
-                    border: OutlineInputBorder(
-                      borderRadius: const BorderRadius.all(
-                        const Radius.circular(10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(10))),
+                child: TextField(
+                  decoration: InputDecoration(
+                      fillColor: Colors.white,
+                      border: OutlineInputBorder(
+                        borderRadius: const BorderRadius.all(
+                          const Radius.circular(10),
+                        ),
                       ),
-                    ),
-                    hintText: 'Senha'),
+                      hintText: 'Senha'),
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
