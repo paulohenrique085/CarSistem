@@ -34,6 +34,13 @@ class _tela_loginState extends State<tela_login> {
                     border: InputBorder.none, hintText: 'E-mail'),
               ),
             ),
+            Container(
+              color: Colors.white,
+              child: TextField(
+                decoration: InputDecoration(
+                    border: InputBorder.none, hintText: 'Senha'),
+              ),
+            )
           ],
         ),
       ),
