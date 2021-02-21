@@ -27,20 +27,38 @@ class _tela_loginState extends State<tela_login> {
               ),
             ),
             /////////////////////////////////////////////////////////////
+
             Container(
-              color: Colors.white,
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.all(Radius.circular(10))),
               child: TextField(
                 decoration: InputDecoration(
-                    border: InputBorder.none, hintText: 'E-mail'),
+                    fillColor: Colors.white,
+                    border: OutlineInputBorder(
+                      borderRadius: const BorderRadius.all(
+                        const Radius.circular(10),
+                      ),
+                    ),
+                    hintText: 'E-mail'),
               ),
             ),
+
             Container(
-              color: Colors.white,
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.all(Radius.circular(10))),
               child: TextField(
                 decoration: InputDecoration(
-                    border: InputBorder.none, hintText: 'Senha'),
+                    fillColor: Colors.white,
+                    border: OutlineInputBorder(
+                      borderRadius: const BorderRadius.all(
+                        const Radius.circular(10),
+                      ),
+                    ),
+                    hintText: 'Senha'),
               ),
-            )
+            ),
           ],
         ),
       ),
