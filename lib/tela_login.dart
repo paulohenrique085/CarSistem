@@ -14,7 +14,7 @@ class _tela_loginState extends State<tela_login> {
     return Scaffold(
       backgroundColor: Colors.amber,
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 12),
+        padding: EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           children: <Widget>[
             //alinhamento da logo acima
