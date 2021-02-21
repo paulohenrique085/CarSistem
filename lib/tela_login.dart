@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 class tela_login extends StatefulWidget {
   @override
@@ -8,6 +9,11 @@ class tela_login extends StatefulWidget {
 class _tela_loginState extends State<tela_login> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Color(0xFFF1C40F),
+      body: Column(
+        children: [],
+      ),
+    );
   }
 }
