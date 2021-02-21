@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'dart:math';
 
@@ -10,9 +12,27 @@ class _tela_loginState extends State<tela_login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFF1C40F),
+      backgroundColor: Colors.amber,
       body: Column(
-        children: [],
+        children: <Widget>[
+          //alinhamento da imagem acima
+          Align(
+            alignment: Alignment.topCenter,
+            child: Image.asset(
+              "assets/log.png",
+              width: 230,
+              height: 230,
+            ),
+          ),
+
+          Card(
+            color: Colors.white,
+            child: TextField(
+              decoration:
+                  InputDecoration(border: InputBorder.none, hintText: 'E-mail'),
+            ),
+          )
+        ],
       ),
     );
   }
