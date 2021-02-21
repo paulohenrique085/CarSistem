@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'tela_login.dart';
 
 void main() {
-  print("object");
+  runApp(MaterialApp(
+    home: tela_login(),
+  ));
 }
