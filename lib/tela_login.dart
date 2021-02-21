@@ -14,7 +14,7 @@ class _tela_loginState extends State<tela_login> {
     return Scaffold(
       backgroundColor: Colors.amber,
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20),
+        padding: EdgeInsets.symmetric(horizontal: 30),
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
