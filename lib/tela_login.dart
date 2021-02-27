@@ -12,7 +12,7 @@ class _tela_loginState extends State<tela_login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber,
+      backgroundColor: Colors.blue,
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 30),
         child: SingleChildScrollView(
