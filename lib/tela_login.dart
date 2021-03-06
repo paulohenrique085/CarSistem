@@ -28,10 +28,10 @@ class _tela_loginState extends State<tela_login> {
               ),
               Padding(
                 padding: const EdgeInsets.only(
-                    top: 10, bottom: 10, right: 30, left: 30),
+                    top: 10, bottom: 10, right: 15, left: 15),
                 child: Container(
                   height: 350,
-                  width: 400,
+                  width: 420,
                   decoration: BoxDecoration(
                       color: Colors.black87,
                       borderRadius: BorderRadius.all(Radius.circular(10))),
@@ -43,12 +43,20 @@ class _tela_loginState extends State<tela_login> {
                         padding:
                             const EdgeInsets.only(top: 30, left: 20, right: 20),
                         child: Container(
+                          height: 55,
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius:
                                   BorderRadius.all(Radius.circular(12))),
-                          child: TextField(
-                            decoration: InputDecoration(hintText: "E-mail"),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: TextField(
+                              decoration: InputDecoration(
+                                //retirando linha textfild
+                                border: InputBorder.none,
+                                hintText: "E-mail",
+                              ),
+                            ),
                           ),
                         ),
                       ),
@@ -57,17 +65,25 @@ class _tela_loginState extends State<tela_login> {
                         padding:
                             const EdgeInsets.only(top: 20, left: 20, right: 20),
                         child: Container(
+                          height: 55,
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius:
                                   BorderRadius.all(Radius.circular(12))),
-                          child: TextField(
-                            decoration: InputDecoration(hintText: "Senha"),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: TextField(
+                              //retirando linha textfild
+                              decoration: InputDecoration(
+                                border: InputBorder.none,
+                                hintText: "Senha",
+                              ),
+                            ),
                           ),
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(9.0),
                         child: GestureDetector(
                           onTap: () {},
                           child: Text(
@@ -82,6 +98,7 @@ class _tela_loginState extends State<tela_login> {
                               top: 25, left: 20, right: 20),
                           child: Container(
                             width: 400,
+                            height: 55,
                             child: RaisedButton(
                               //arredondando bordas do botão
                               shape: RoundedRectangleBorder(
@@ -90,15 +107,18 @@ class _tela_loginState extends State<tela_login> {
                               onPressed: () {},
                               child: Text(
                                 "Entrar",
-                                style: TextStyle(color: Colors.white),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               ),
                             ),
                           )),
                       //botão cadastrar
                       Padding(
-                          padding: const EdgeInsets.only(left: 20, right: 20),
+                          padding: const EdgeInsets.only(
+                              top: 10, left: 20, right: 20),
                           child: Container(
                             width: 400,
+                            height: 55,
                             child: RaisedButton(
                               //arredondando bordas do botão
                               shape: RoundedRectangleBorder(
@@ -107,7 +127,8 @@ class _tela_loginState extends State<tela_login> {
                               onPressed: () {},
                               child: Text(
                                 "Cadastrar",
-                                style: TextStyle(color: Colors.white),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               ),
                             ),
                           ))
