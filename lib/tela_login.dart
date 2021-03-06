@@ -22,15 +22,15 @@ class _tela_loginState extends State<tela_login> {
                     top: 30, bottom: 30, left: 110, right: 110),
                 child: Image.asset(
                   "assets/Yan.png",
-                  width: 90,
-                  height: 90,
+                  width: 110,
+                  height: 100,
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.only(
-                    top: 10, bottom: 10, right: 15, left: 15),
+                    top: 10, bottom: 10, right: 6, left: 6),
                 child: Container(
-                  height: 350,
+                  height: 360,
                   width: 420,
                   decoration: BoxDecoration(
                       color: Colors.black87,
@@ -44,6 +44,7 @@ class _tela_loginState extends State<tela_login> {
                             const EdgeInsets.only(top: 30, left: 20, right: 20),
                         child: Container(
                           height: 55,
+                          width: 500,
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius:
@@ -51,11 +52,14 @@ class _tela_loginState extends State<tela_login> {
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: TextField(
+                              keyboardType: TextInputType.emailAddress,
                               decoration: InputDecoration(
                                 //retirando linha textfild
                                 border: InputBorder.none,
                                 hintText: "E-mail",
                               ),
+                              //estilo do texto que entra
+                              style: TextStyle(fontSize: 18),
                             ),
                           ),
                         ),
@@ -66,6 +70,7 @@ class _tela_loginState extends State<tela_login> {
                             const EdgeInsets.only(top: 20, left: 20, right: 20),
                         child: Container(
                           height: 55,
+                          width: 500,
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius:
@@ -78,6 +83,9 @@ class _tela_loginState extends State<tela_login> {
                                 border: InputBorder.none,
                                 hintText: "Senha",
                               ),
+                              //estilo do texto que entra
+                              style: TextStyle(fontSize: 20),
+                              obscureText: true,
                             ),
                           ),
                         ),
@@ -97,7 +105,7 @@ class _tela_loginState extends State<tela_login> {
                           padding: const EdgeInsets.only(
                               top: 25, left: 20, right: 20),
                           child: Container(
-                            width: 400,
+                            width: 500,
                             height: 55,
                             child: RaisedButton(
                               //arredondando bordas do botão
@@ -117,7 +125,7 @@ class _tela_loginState extends State<tela_login> {
                           padding: const EdgeInsets.only(
                               top: 10, left: 20, right: 20),
                           child: Container(
-                            width: 400,
+                            width: 500,
                             height: 55,
                             child: RaisedButton(
                               //arredondando bordas do botão
