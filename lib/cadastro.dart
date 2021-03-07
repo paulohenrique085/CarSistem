@@ -71,7 +71,6 @@ class _CadastroState extends State<Cadastro> {
                               ),
                               //estilo do texto que entra
                               style: TextStyle(fontSize: 20),
-                              obscureText: true,
                             ),
                           ),
                         ),
@@ -95,7 +94,6 @@ class _CadastroState extends State<Cadastro> {
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: TextField(
-                                  keyboardType: TextInputType.emailAddress,
                                   decoration: InputDecoration(
                                     //retirando linha textfild
                                     border: InputBorder.none,
@@ -121,7 +119,6 @@ class _CadastroState extends State<Cadastro> {
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: TextField(
-                                  keyboardType: TextInputType.emailAddress,
                                   decoration: InputDecoration(
                                     //retirando linha textfild
                                     border: InputBorder.none,
@@ -158,7 +155,6 @@ class _CadastroState extends State<Cadastro> {
                               ),
                               //estilo do texto que entra
                               style: TextStyle(fontSize: 20),
-                              obscureText: true,
                             ),
                           ),
                         ),
