@@ -1,3 +1,4 @@
+import 'package:appyan/aguardando.dart';
 import 'package:flutter/material.dart';
 import 'tela_login.dart';
 import 'dart:ui';
@@ -33,7 +34,13 @@ class _HomeState extends State<Home> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(100)),
               color: Color(0xFFec2300),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Aguardando(),
+                    ));
+              },
               child: Text(
                 "Go!",
                 style: TextStyle(fontSize: 29, color: Colors.white),

@@ -1,4 +1,6 @@
 import 'dart:ui';
+import 'package:appyan/cadastro.dart';
+
 import 'home.dart';
 
 import 'package:flutter/material.dart';
@@ -146,7 +148,13 @@ class _tela_loginState extends State<tela_login> {
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(12)),
                               color: Color(0xFFec2300),
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => Cadastro(),
+                                    ));
+                              },
                               child: Text(
                                 "Cadastrar",
                                 style: TextStyle(
