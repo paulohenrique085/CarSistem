@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'home.dart';
 
 import 'package:flutter/material.dart';
 import 'dart:math';
@@ -12,18 +13,25 @@ class _tela_loginState extends State<tela_login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.white,
         body: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Padding(
                 padding: const EdgeInsets.only(
-                    top: 30, bottom: 30, left: 110, right: 110),
-                child: Image.asset(
-                  "assets/Yan.png",
-                  width: 110,
-                  height: 100,
+                    top: 30, bottom: 10, left: 100, right: 100),
+                child: Container(
+                  width: 200,
+                  height: 120,
+                  decoration: BoxDecoration(
+                      color: Colors.transparent,
+                      borderRadius: BorderRadius.all(Radius.circular(100))),
+                  child: Image.asset(
+                    "assets/Yan.png",
+                    width: 90,
+                    height: 100,
+                  ),
                 ),
               ),
               Padding(
@@ -96,7 +104,7 @@ class _tela_loginState extends State<tela_login> {
                           onTap: () {},
                           child: Text(
                             "Esqueci a senha",
-                            style: TextStyle(color: Color(0xFF16A085)),
+                            style: TextStyle(color: Colors.white),
                           ),
                         ),
                       ),
@@ -111,8 +119,14 @@ class _tela_loginState extends State<tela_login> {
                               //arredondando bordas do botão
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(12)),
-                              color: Color(0xFF16A085),
-                              onPressed: () {},
+                              color: Color(0xFFec2300),
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => Home(),
+                                    ));
+                              },
                               child: Text(
                                 "Entrar",
                                 style: TextStyle(
@@ -131,7 +145,7 @@ class _tela_loginState extends State<tela_login> {
                               //arredondando bordas do botão
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(12)),
-                              color: Color(0xFF16A085),
+                              color: Color(0xFFec2300),
                               onPressed: () {},
                               child: Text(
                                 "Cadastrar",
@@ -148,4 +162,6 @@ class _tela_loginState extends State<tela_login> {
           ),
         ));
   }
+
+  home() {}
 }
