@@ -163,32 +163,6 @@ class _CadastroState extends State<Cadastro> {
                           ),
                         ),
                       ),
-                      //container alinhado estilizado para campo:senha
-                      Padding(
-                        padding:
-                            const EdgeInsets.only(top: 20, left: 20, right: 20),
-                        child: Container(
-                          height: 55,
-                          width: 500,
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(12))),
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: TextField(
-                              //retirando linha textfild
-                              decoration: InputDecoration(
-                                border: InputBorder.none,
-                                hintText: "Modelo veículo ex:(Siena preto)",
-                              ),
-                              //estilo do texto que entra
-                              style: TextStyle(fontSize: 20),
-                              obscureText: true,
-                            ),
-                          ),
-                        ),
-                      ),
                       //container alinhado estilizado para campo:conf.senha
                       Padding(
                         padding:
@@ -243,7 +217,7 @@ class _CadastroState extends State<Cadastro> {
                       //botão de cadastrar
                       Padding(
                           padding: const EdgeInsets.only(
-                              top: 10, left: 20, right: 20),
+                              top: 35, left: 20, right: 20),
                           child: Container(
                             width: 500,
                             height: 55,
