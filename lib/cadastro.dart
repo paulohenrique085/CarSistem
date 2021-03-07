@@ -24,7 +24,7 @@ class _CadastroState extends State<Cadastro> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      //container alinhado e estilizado para campo do:celular
+                      ///container alinhado e estilizado para campo do:celular
                       Padding(
                         padding:
                             const EdgeInsets.only(top: 40, left: 20, right: 20),
