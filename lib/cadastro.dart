@@ -38,7 +38,7 @@ class _CadastroState extends State<Cadastro> {
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: TextField(
-                              keyboardType: TextInputType.emailAddress,
+                              keyboardType: TextInputType.phone,
                               decoration: InputDecoration(
                                 //retirando linha textfild
                                 border: InputBorder.none,
