@@ -27,7 +27,7 @@ class _CadastroState extends State<Cadastro> {
                       //container alinhado e estilizado para campo do:celular
                       Padding(
                         padding:
-                            const EdgeInsets.only(top: 15, left: 20, right: 20),
+                            const EdgeInsets.only(top: 40, left: 20, right: 20),
                         child: Container(
                           height: 55,
                           width: 500,
