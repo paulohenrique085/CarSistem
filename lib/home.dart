@@ -17,11 +17,11 @@ class _HomeState extends State<Home> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Padding(
-            padding: const EdgeInsets.only(left: 30, right: 30, bottom: 30),
+            padding: const EdgeInsets.only(left: 30, right: 20, bottom: 30),
             child: Text(
               "Se você tiver iniciado um serviço com yan serviços clique aqui:",
               style: TextStyle(
-                  color: Color(0xFFec2300),
+                  color: Colors.black,
                   fontSize: 20,
                   fontWeight: FontWeight.bold),
             ),
@@ -33,7 +33,7 @@ class _HomeState extends State<Home> {
             child: RaisedButton(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(100)),
-              color: Color(0xFFec2300),
+              color: Colors.black,
               onPressed: () {
                 Navigator.push(
                     context,
