@@ -108,10 +108,10 @@ class _CadastroState extends State<Cadastro> {
                           //linha para ano
                           Padding(
                             padding: const EdgeInsets.only(
-                                top: 10, left: 15, right: 15),
+                                top: 10, left: 2, right: 2),
                             child: Container(
                               height: 55,
-                              width: 125,
+                              width: 95,
                               decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius:
